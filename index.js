@@ -59,6 +59,12 @@ client.on('message', (message) => {
   if(message.content === '형진띠!') {
     message.reply('ㅙ');
   }
+  if(message.content === '야꿀벌') {
+    message.reply('넣을게');
+  }
+  if(message.content === '옵지') {
+    message.reply('https://www.op.gg/');
+  }
 
   if(message.content == 'embed') {
     let img = 'https://cdn.discordapp.com/attachments/786762687173623819/787149079989321789/5453043c81e5d70d.png';
