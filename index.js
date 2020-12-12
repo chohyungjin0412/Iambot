@@ -29,6 +29,7 @@ client.on("guildMemberRemove", (member) => {
 });
 
 client.on('message', (message) => {
+  let img = 'https://cdn.discordapp.com/attachments/753174258686885888/787278872718213140/20200108181038.923682.jpg';
   if(message.content === '야스오는') {
     message.reply('과학');
   }
@@ -57,7 +58,7 @@ client.on('message', (message) => {
     message.reply('ㅙ');
   }
   if(message.content === '야꿀벌') {
-    message.reply('https://discord.com/channels/@me/753174258686885888/787278872923471872');
+    message.reply('img');
   }
 
   if(message.content == 'embed') {
