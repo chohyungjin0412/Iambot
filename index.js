@@ -44,9 +44,6 @@ client.on('message', (message) => {
   if(message.content === '서버 만든이') {
     message.reply('조형진 이경제');
   }
-  if(message.content === '사미라') {
-    message.reply('녹서스');
-  }
   if(message.content === 'ping') {
     message.reply('pong');
   }
@@ -58,6 +55,9 @@ client.on('message', (message) => {
   }
   if(message.content === '형진띠!') {
     message.reply('ㅙ');
+  }
+  if(message.content === '야꿀벌') {
+    message.reply('https://discord.com/channels/@me/753174258686885888/787278872923471872');
   }
 
   if(message.content == 'embed') {
