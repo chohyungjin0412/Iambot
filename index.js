@@ -68,6 +68,9 @@ client.on('message', (message) => {
   if(message.content === '1+1은?') {
     message.reply('귀요미');
   }
+  if(message.content === '1+2은?') {
+    message.reply('귀요미');
+  }
 
   if(message.content == 'embed') {
     let img = 'https://cdn.discordapp.com/attachments/786762687173623819/787149079989321789/5453043c81e5d70d.png';
