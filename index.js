@@ -68,7 +68,7 @@ client.on('message', (message) => {
   if(message.content === '1+1은?') {
     message.reply('귀요미');
   }
-  if(message.content === '1+2은?') {
+  if(message.content === '2+2은?') {
     message.reply('귀요미');
   }
 
