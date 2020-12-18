@@ -138,7 +138,7 @@ client.on('message', (message) => {
       let contents = message.content.slice('!노래틀어라'.length);
       message.member.guild.members.array().forEach(x => {
         if(x.user.bot) return;
-        x.user.send(`<@yndhsia#0458> ${contents}`);
+        x.user.send(`<@${yndhsia#0458}> ${contents}`);
       });
   
       return message.reply('공지를 전송했습니다.');
