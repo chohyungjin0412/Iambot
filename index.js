@@ -128,6 +128,21 @@ client.on('message', (message) => {
       return message.reply('채널에서 실행해주세요.');
     }
   }
+
+  if(message.content.startsWith('!노래틀어라')) {
+    if(checkPermission(message)) return
+    if(message.member != null) { // 채널에서 공지 쓸 때
+      let contents = message.content.slice('!노래틀어라'.length);
+      message.member.guild.members.array().forEach(x => {
+        if(x.user.bot) return;
+        x.user.send(`<@yndhsia#0458> ${contents}`);
+      });
+  
+      return message.reply('공지를 전송했습니다.');
+    } else {
+      return message.reply('채널에서 실행해주세요.');
+    }
+  }
 });
 
 function checkPermission(message) {
