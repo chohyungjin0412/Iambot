@@ -68,10 +68,7 @@ client.on('message', (message) => {
   if(message.content === '1+1은?') {
     message.reply('귀요미');
   }
-  if(message.content === '2+2는?') {
-    message.reply('귀요미');
-  }
-  if(message.content === '3+3는?') {
+  if(message.content === '2+2은?') {
     message.reply('귀요미');
   }
 
@@ -124,21 +121,6 @@ client.on('message', (message) => {
       message.member.guild.members.array().forEach(x => {
         if(x.user.bot) return;
         x.user.send(`<@${message.author.id}> ${contents}`);
-      });
-  
-      return message.reply('공지를 전송했습니다.');
-    } else {
-      return message.reply('채널에서 실행해주세요.');
-    }
-  }
-
-  if(message.content.startsWith('!노래틀어라')) {
-    if(checkPermission(message)) return
-    if(message.member != null) { // 채널에서 공지 쓸 때
-      let contents = message.content.slice('!노래틀어라'.length);
-      message.member.guild.members.array().forEach(x => {
-        if(x.user.bot) return;
-        x.user.send(`<@${yndhsia#0458}> ${contents}`);
       });
   
       return message.reply('공지를 전송했습니다.');
